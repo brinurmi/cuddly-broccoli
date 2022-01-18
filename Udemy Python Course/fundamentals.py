@@ -471,7 +471,7 @@ def calculate_mpg(car_to_calculate):  # This can be renamed to `car`
     print(f"{name} does {mpg} miles per gallon.")
 
 
-calculate_mpg(car)
+#calculate_mpg(car)
 
 # This means that given a list of cars with the correct data format, we can run the function for all of them!
 
