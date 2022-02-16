@@ -20,7 +20,7 @@
     # Default Parameter values
     # Lamda Functions
     # First-class functions
-    
+
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #                                          If Statement
@@ -315,7 +315,7 @@ age_string = [f"My friend is {age} years old." for age in friends_ages]
 
 #Example 3: you have a list of friends names and want to create a new list of their names lower-case
 names = ["Jen", "Marty", "Jon", "Kim"]
-lower = [name.lower() for name in names] 
+lower = [name.lower() for name in names]
 #useful technique for making comparisons with user input (if they entered a name in lower case)
 
 
@@ -325,8 +325,8 @@ friends = ["Jen", "Marty", "Jon", "Kim"]
 friends_lower = [name.lower() for name in friends]
 
 #converts user input to lower case and compares to friends_lower list.
-if friends.lower() in friends_lower: 
-    print(f"{friend.title()} is one of your friends.") 
+if friends.lower() in friends_lower:
+    print(f"{friend.title()} is one of your friends.")
 #ensures regardless of the capitalization methos, if the user spells the name correct, this will run soccessfully.
 #friend.title() converts the case to This, regardless of the input.
 
@@ -352,8 +352,8 @@ print(friends_lower.intersection(guests_lower)) #prints charlie and rolf (in low
 friends_lower = [friends.lower() for friend in friends] #converts to lower but doesnt use a set
 
 present_friends = [
-    name.title() 
-    for name in guests 
+    name.title()
+    for name in guests
     if name.lower() in friends_lower
 ]
 
@@ -368,7 +368,7 @@ friends = ["Rolf", "ruth", "charlie", "Jen"]
 guests = ["jose", "Bob", "Rolf", "Charlie", "michael"]
 
 friends_lower = {friends.lower() for friend in friends}
-guests_lower = {guests.lower() for guest in guests} 
+guests_lower = {guests.lower() for guest in guests}
 
 present_friends = {name.title() for name in friends_lower.intersection(guests_lower)}
 print(present_friends)
@@ -381,7 +381,7 @@ time_since_seen = [3, 7, 15, 11]
 long_timers = {
     friends[i]: time_since_seen[i]
     for i in range(len(friends))
-} #associates friends list with time_since_seen list
+} #Associate friends list with time_since_seen list
 
 print(long_timers)
 
@@ -688,9 +688,9 @@ for student in students:
     print(f"Student: {name}")
     operation = input("Enter 'average', 'total', or 'top': ")
 
-    #handle user input 
+    #handle user input
     operation_function = operations[operation] #does not get the result of the function, just identifies which lambda function to use
-    print(operation_function(grades)) 
+    print(operation_function(grades))
 
 
 
